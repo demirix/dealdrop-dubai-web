@@ -181,19 +181,42 @@ export default function Home() {
       {/* Deal Example */}
       <section className="container mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold text-center mb-12">Sample Deal Alert</h2>
-        <div className="max-w-lg mx-auto bg-slate-800 rounded-2xl p-6 border border-slate-700 font-mono text-sm">
-          <p className="text-emerald-400 font-bold mb-2">GREAT DEAL - 18% Below Market</p>
+        <div className="max-w-xl mx-auto bg-slate-800 rounded-2xl p-6 border border-slate-700 font-mono text-sm">
+          <p className="text-emerald-400 font-bold mb-2">⭐ GREAT DEAL - 18% Below Market</p>
           <p className="font-bold text-lg mb-3">2BR in Marina Gate Tower 1</p>
-          <div className="space-y-1 text-slate-300">
-            <p>Dubai Marina</p>
-            <p>1,450 sqft | 2 bed | 3 bath</p>
-            <p className="text-white font-bold text-xl mt-3">AED 2,100,000</p>
-            <p className="text-slate-400">AED 1,448/sqft</p>
-            <p className="text-emerald-400 mt-2">Market avg: AED 1,766/sqft</p>
-            <p className="text-emerald-400">Potential savings: AED 461,000</p>
+          <div className="space-y-2 text-slate-300">
+            <p>📍 Dubai Marina</p>
+            <p>🏠 1,450 sqft (135 m²) | 2 bed | 3 bath</p>
+
+            <div className="mt-4 p-3 bg-slate-900/50 rounded-lg">
+              <p className="text-slate-400 text-xs mb-1">💰 Price</p>
+              <p className="text-white font-bold text-xl">AED 2,100,000</p>
+              <p className="text-slate-400">$571,680 | €527,100</p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3 mt-3">
+              <div className="p-3 bg-slate-900/50 rounded-lg">
+                <p className="text-slate-400 text-xs mb-1">📐 Price/unit</p>
+                <p className="text-white">AED 1,448/sqft</p>
+                <p className="text-slate-500 text-xs">AED 15,586/m²</p>
+                <p className="text-slate-500 text-xs">$394/sqft | $4,244/m²</p>
+              </div>
+              <div className="p-3 bg-slate-900/50 rounded-lg">
+                <p className="text-slate-400 text-xs mb-1">📊 Market avg</p>
+                <p className="text-white">AED 1,766/sqft</p>
+                <p className="text-slate-500 text-xs">AED 19,010/m²</p>
+                <p className="text-slate-500 text-xs">$481/sqft | $5,175/m²</p>
+              </div>
+            </div>
+
+            <div className="mt-3 p-3 bg-emerald-900/30 rounded-lg border border-emerald-500/30">
+              <p className="text-emerald-400 font-semibold">💵 Potential savings</p>
+              <p className="text-emerald-300">AED 461,000 ($125,500 | €115,730)</p>
+            </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-slate-700">
-            <p className="text-blue-400">View Listing →</p>
+          <div className="mt-4 pt-4 border-t border-slate-700 flex justify-between items-center">
+            <p className="text-blue-400">🔗 View Listing →</p>
+            <p className="text-slate-500 text-xs">Score: 82/100</p>
           </div>
         </div>
       </section>
@@ -211,7 +234,7 @@ export default function Home() {
           <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
             <h3 className="font-semibold mb-2">How often are deals posted?</h3>
             <p className="text-slate-400">
-              We scan daily at 6 AM UAE time. Pro members get instant alerts as deals are found. Free channel gets 1 curated deal per day.
+              We scan listings every 30 minutes. Pro members get instant alerts within minutes of a deal appearing. Free channel gets 1 curated deal daily at 6 AM UAE time.
             </p>
           </div>
           <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
